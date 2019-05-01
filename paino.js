@@ -2,7 +2,7 @@
 var f = 0;
 var toneDom = {};
 function play(tone){
-    for (var i=1;i<=6;i++) {
+    for (var i=1;i<=22;i++) {
         toneDom[i] = document.getElementById('audio' + i);
         toneDom[i].pause();
         toneDom[i].currentTime = 0;
@@ -24,7 +24,7 @@ focusButtion.onkeyup = function(e){
         console.log(f);
         break;
     case 40: 
-        if (f<6) {f++; play(f);}        
+        if (f<22) {f++; play(f);}        
         console.log(f);
         break;
     
