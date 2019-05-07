@@ -10,7 +10,7 @@ function play(tone){
         x.currentTime = 0;
     }
     for (var i=1;i<=10;i++) {
-        x = document.getElementById('audio' + 1+'1');
+        x = document.getElementById('audio' + i +'1');
         x.pause();
         x.currentTime = 0;
     }
